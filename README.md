@@ -17,8 +17,8 @@ pkg install python
 git clone https://github.com/kaamikhanbhutta/bhutta.git
 cd bhutta
 ls
-chmod +x Saafi.py
-python Saafi.py
+chmod +x Kaami.py
+python Kaami.py
 
 ```
  
