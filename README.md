@@ -14,8 +14,8 @@ apt update
 apt upgrade
 pkg install git
 pkg install python
-git clone https://github.com/kaamikhanbhutta/bhutta.git
-cd bhutta
+git clone https://github.com/kaamikhanbhutta/KAAMI.git
+cd KAAMI
 ls
 chmod +x Kaami.py
 python Kaami.py
