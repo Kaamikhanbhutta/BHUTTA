@@ -1,29 +1,35 @@
-<p align="center">
-<a href="https://KAAMI-KHAN.github.io/"><img title="Made in PAKISTAN" src="https://img.shields.io/badge/MADE%20IN-PAKISTAN-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
+# command 
 
+![Made in Pakistan](https://img.shields.io/badge/MADE%20IN%20-PAKISTAN-green?style=for-the-badge&logo=appveyor)
 
-<h3 align="center">
-  <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
-  &nbsp;𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙼𝚈 𝙿𝚁𝙾𝙵𝙸𝙻𝙴&nbsp;
-  <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
+![KAAMI-KHAN](https://img.shields.io/badge/KAAMI%20-KHAN-green?style=for-the-badge&logo=appveyor)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F72121&size=25&duration=7000&center=true&vCenter=true&multiline=true&height=100&lines=🌹+I+am+KAAMI+KHAN+🌹)](https://git.io/typing-svg)
+![GitHub followers](https://img.shields.io/github/followers/syedzada1100?style=for-the-badge)
 
-INSTALATION
+# Installation 
 
-apt update 
-
-
-apt upgrade 
+```  
+# Command 🔥
+apt update
+apt upgrade
 pkg install git
-
-
-git clone https://github.com/Kaamikhanbhutta
-
-
+pkg install python
+git clone https://github.com/kaamikhanbhutta/bhutta.git
 cd bhutta
-
-
+ls
+chmod +x Saafi.py
 python Saafi.py
 
-Thank You ❤️
+```
+ 
+ 
+## WARNING : 
+***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
+## Follow On Social Media
+<p align="center">
+<a href="https://www.facebook.com/MdHassankamran.bhutta"><img title="Facebook" src="https://img.shields.io/badge/Facebook-white?style=for-the-badge&logo=facebook"></a>
+<a href="https://www.instagram.com/kaami_khan_bhutta_/"><img title="Instagram" src="https://img.shields.io/badge/INSTAGRAM-purple?style=for-the-badge&logo=instagram"></a>
+
+<a href="https://github.com/kaamikhanbhutta"><img title="Github" src="https://img.shields.io/badge/Github-KAAMI--KHAN-green?style=for-the-badge&logo=github"></a>
+ 
+
